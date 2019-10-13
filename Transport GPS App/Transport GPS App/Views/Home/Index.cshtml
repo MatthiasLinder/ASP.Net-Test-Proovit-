@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Transport_GPS_App.Models.Vehicle>
+@{
+   
+}
+
+
+<table class=" table table-bordered table-hover">
+
+
+
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Route</th>
+            <th>Longtitude</th>
+            <th>Latitude</th>
+            <th>Angle</th>
+            <th>ID</th>
+        </tr>
+    </thead>
+
+
+
+    <tbody>
+
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                @if(vehicle.Type == "1")
+                {
+                    <td style="color: red">Trol</td>
+                }
+                @if(vehicle.Type == "2")
+                {
+                    <td style="color: green">Bus</td>
+                }
+                @if(vehicle.Type == "3")
+                {
+                    <td style="color: blue">Tram</td>
+                }
+
+                @*<td>@vehicle.Type</td>*@
+                <td>@vehicle.Route</td>
+                <td>@vehicle.Longtitude</td>
+                <td>@vehicle.Latitude</td>
+                <td>@vehicle.Angle</td>
+                <td>@vehicle.VehicleID</td>
+            </tr>
+        }
+
+    </tbody>
+
+
+
+</table>

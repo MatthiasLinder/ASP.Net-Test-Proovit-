@@ -1,0 +1,14 @@
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\bin\Debug\netcoreapp2.1\Transport Unit Tests.deps.json
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\bin\Debug\netcoreapp2.1\Transport Unit Tests.runtimeconfig.json
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\bin\Debug\netcoreapp2.1\Transport Unit Tests.runtimeconfig.dev.json
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\bin\Debug\netcoreapp2.1\Transport Unit Tests.dll
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\bin\Debug\netcoreapp2.1\Transport Unit Tests.pdb
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\obj\Debug\netcoreapp2.1\Transport Unit Tests.csproj.CoreCompileInputs.cache
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\obj\Debug\netcoreapp2.1\Transport Unit Tests.AssemblyInfoInputs.cache
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\obj\Debug\netcoreapp2.1\Transport Unit Tests.AssemblyInfo.cs
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\obj\Debug\netcoreapp2.1\Transport Unit Tests.dll
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\obj\Debug\netcoreapp2.1\Transport Unit Tests.pdb
+C:\Users\Matthias\source\repos\Transport GPS App\Transport Unit Tests\obj\Debug\netcoreapp2.1\Transport Unit Tests.csprojAssemblyReference.cache
