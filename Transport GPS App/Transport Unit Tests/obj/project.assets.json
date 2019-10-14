@@ -5834,11 +5834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matthias\\source\\repos\\Transport GPS App\\Transport Unit Tests\\Transport Unit Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Matthias\\Documents\\GitHub\\ASP.Net-Test-Proovit-\\Transport GPS App\\Transport Unit Tests\\Transport Unit Tests.csproj",
       "projectName": "Transport Unit Tests",
-      "projectPath": "C:\\Users\\Matthias\\source\\repos\\Transport GPS App\\Transport Unit Tests\\Transport Unit Tests.csproj",
+      "projectPath": "C:\\Users\\Matthias\\Documents\\GitHub\\ASP.Net-Test-Proovit-\\Transport GPS App\\Transport Unit Tests\\Transport Unit Tests.csproj",
       "packagesPath": "C:\\Users\\Matthias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matthias\\source\\repos\\Transport GPS App\\Transport Unit Tests\\obj\\",
+      "outputPath": "C:\\Users\\Matthias\\Documents\\GitHub\\ASP.Net-Test-Proovit-\\Transport GPS App\\Transport Unit Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

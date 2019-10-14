@@ -10,8 +10,10 @@ using System.Net;
 namespace Transport_Unit_Tests
 {
     [TestClass]
-    public class InputTests
+    public class FormatTests
     {
+        public List<string> vehicleList;
+
         public List<string> VehicleTypes = new List<string>();
         public List<string> VehicleRoutes = new List<string>();
         public List<string> Longtitudes = new List<string>();
@@ -26,7 +28,7 @@ namespace Transport_Unit_Tests
             set { headOnly = value; }
         }
 
-        public InputTests()
+        public FormatTests()
         {
             var webRequest = WebRequest.Create(@"https://transport.tallinn.ee/gps.txt");
 
@@ -35,7 +37,7 @@ namespace Transport_Unit_Tests
             var reader = new StreamReader(content);
 
             var lines = reader.ReadToEnd();
-            List<string> vehicleList = new List<String>(lines.Split(new char[] { '\n' }));
+            vehicleList = new List<String>(lines.Split(new char[] { '\n' }));
 
             foreach (var item in vehicleList)
             {
@@ -74,12 +76,11 @@ namespace Transport_Unit_Tests
 
                 if (length == formatlength)
                 {
-                    Debug.WriteLine("Success");
                     Assert.AreEqual(length, formatlength);
                 }
                 else
                 {
-                    Assert.Fail("Input Format is not valid.");
+                    Assert.Fail("One or more Vehicle types is not valid.");
                 }
             }
         }
@@ -89,24 +90,23 @@ namespace Transport_Unit_Tests
         {
             foreach (var item in VehicleRoutes)
             {
+                bool Status = false;
                 int length = item.Length;
-                Debug.WriteLine(item);
-                int formatlength1 = 1;
-                int formatlength2 = 2;
-                int formatlength3 = 3;
 
-                bool IsEqual = false;
+                int ValidLength1 = 1;
+                int ValidLength2 = 2;
+                int ValidLength3 = 3;
 
-                if (length == formatlength1 || length == formatlength2 || length == formatlength3)
+                
+
+                if (length == ValidLength1 || length == ValidLength2 || length == ValidLength3)
                 {
-                    IsEqual = true;
-                    Debug.WriteLine("Success");
-                    Assert.IsTrue(IsEqual);
+                    Status = true;
+                    Assert.IsTrue(Status);
                 }
                 else
                 {
-                    IsEqual = false;
-                    Assert.Fail("Input Format is not valid.");
+                    Assert.Fail("One or more Vehicle Routes is not valid.");
                 }
             }
         }
@@ -119,19 +119,16 @@ namespace Transport_Unit_Tests
                 int length = item.Length;
                 int formatlength = 8;
 
-                bool IsEqual = false;
+                bool Status = false;
 
                 if (length == formatlength || item == "0")
                 {
-                    IsEqual = true;
-                    Debug.WriteLine("Success");
-                    Assert.IsTrue(IsEqual);
+                    Status = true;
+                    Assert.IsTrue(Status);
                 }
                 else
                 {
-                    IsEqual = false;
-                    Debug.WriteLine(item);
-                    Assert.Fail("Input Format is not valid.");
+                    Assert.Fail("One or more Longtitude values not valid.");
                 }
             }
         }
@@ -144,19 +141,16 @@ namespace Transport_Unit_Tests
                 int length = item.Length;
                 int formatlength = 8;
 
-                bool IsEqual = false;
+                bool Status = false;
 
                 if (length == formatlength || item == "0")
                 {
-                    IsEqual = true;
-                    Debug.WriteLine("Success");
-                    Assert.IsTrue(IsEqual);
+                    Status = true;
+                    Assert.IsTrue(Status);
                 }
                 else
                 {
-                    IsEqual = false;
-                    Debug.WriteLine(item);
-                    Assert.Fail("Input Format is not valid.");
+                    Assert.Fail("One or more Latitude values not valid.");
                 }
             }
         }
@@ -167,20 +161,16 @@ namespace Transport_Unit_Tests
             foreach (var item in Angles)
             {
                 int length = item.Length;
-
-                bool IsEqual = false;
+                bool Status = false;
 
                 if (length <= 3)
                 {
-                    IsEqual = true;
-                    Debug.WriteLine("Success");
-                    Assert.IsTrue(IsEqual);
+                    Status = true;
+                    Assert.IsTrue(Status);
                 }
                 else
                 {
-                    IsEqual = false;
-                    Debug.WriteLine(item);
-                    Assert.Fail("Input Format is not valid.");
+                    Assert.Fail("One or more Angles is not valid.");
                 }
             }
         }
@@ -192,18 +182,15 @@ namespace Transport_Unit_Tests
             {
                 int length = item.Length;
 
-                bool IsEqual = false;
+                bool Status = false;
 
                 if (length <= 4)
                 {
-                    IsEqual = true;
-                    Debug.WriteLine("Success");
-                    Assert.IsTrue(IsEqual);
+                    Status = true;
+                    Assert.IsTrue(Status);
                 }
                 else
                 {
-                    IsEqual = false;
-                    Debug.WriteLine(item);
                     Assert.Fail("Input Format is not valid.");
                 }
             }
