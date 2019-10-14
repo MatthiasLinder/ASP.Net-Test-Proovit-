@@ -66,7 +66,7 @@ namespace Transport_Unit_Tests
                 }
                 else
                 {
-                    Assert.Fail();
+                    Assert.Fail("Unexpected Vehicle Type detected.");
                 }
             }
         }
@@ -85,14 +85,14 @@ namespace Transport_Unit_Tests
                 else
                 {
                     var Numbers = item.ToCharArray();
-                    if (Numbers[0] == '2' && Numbers[1] == '4' && Numbers[7] == '0')
+                    if (Numbers[0] == '2' && (Numbers[1] == '4' || Numbers[1] == '5') && Numbers[7] == '0')
                     {
                         Status = true;
                         Assert.IsTrue(Status);
                     }
                     else
                     {
-                        Assert.Fail();
+                        Assert.Fail("Longtitude value is invalid.");
                     }
                 }
             }
@@ -112,14 +112,14 @@ namespace Transport_Unit_Tests
                 else
                 {
                     var Numbers = item.ToCharArray();
-                    if (Numbers[0] == '5' && Numbers[1] == '9' && Numbers[7] == '0')
+                    if (Numbers[0] == '5' && (Numbers[1] == '9' || Numbers[1] == '8') && Numbers[7] == '0')
                     {
                         Status = true;
                         Assert.IsTrue(Status);
                     }
                     else
                     {
-                        Assert.Fail();
+                        Assert.Fail("Latitude value is invalid.");
                     }
                 }
             }
@@ -146,7 +146,7 @@ namespace Transport_Unit_Tests
                     }
                     else
                     {
-                        Assert.Fail();
+                        Assert.Fail("Angle value is invalid.");
                     }
                 }
             }
